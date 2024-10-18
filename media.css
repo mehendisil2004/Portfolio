@@ -1,0 +1,284 @@
+/* Media styling */
+@media (max-width: 768px) {
+  .trns-img img {
+    width: 80vw;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .input-box input {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+  }
+
+  .input-box input::placeholder {
+    font-size: 1.5rem;
+  }
+
+  .input-box i {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .experience-info img {
+    width: 70vw;
+  }
+  .about-me,
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .experience-details-container,
+  .experience-containers {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .details-container {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .projects .details-container {
+    margin-bottom: 2rem;
+  }
+
+  .socials {
+    gap: 1rem;
+  }
+
+  .info-box h1 {
+    font-size: 2rem;
+  }
+
+  .info-box span {
+    font-size: 1.5rem;
+  }
+
+  .about .section-title,
+  .experience .section-title,
+  .projects .section-title,
+  .connect .section-title {
+    font-size: 2rem;
+  }
+}
+.experience-sub-title {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+
+  .about .about-container {
+    gap: 3rem;
+  }
+
+  .experience-info {
+    flex-direction: column;
+  }
+
+  .input-box input {
+    padding: 2rem 5rem;
+    font-size: 2.5rem;
+  }
+
+  .input-box input::placeholder {
+    font-size: 2.5rem;
+  }
+
+  .input-box i {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 884px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .input-box input {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+  }
+
+  .input-box input::placeholder {
+    font-size: 1.5rem;
+  }
+
+  .input-box i {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .experience-info img {
+    width: 70vw;
+  }
+  .about-me,
+  .about-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .experience-details-container,
+  .experience-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.8rem;
+  }
+  .trns-img img {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .trns-img img {
+    width: 90vw;
+  }
+
+  header #menu {
+    display: block;
+  }
+  header .github-btn {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #bb88af;
+    border-radius: 3rem;
+    display: none;
+  }
+
+  .nav-links li {
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+  header {
+    padding: 1rem 5rem;
+    gap: 8rem;
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+  }
+
+  .about-container img {
+    width: 80vw;
+  }
+
+  .input-box input {
+    padding: 0.5rem 3rem;
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  .input-box input::placeholder {
+    font-size: 1.5rem;
+  }
+
+  footer ul {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    display: none;
+  }
+
+  header .github-btn {
+    display: none;
+  }
+  #menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .experience-details-container,
+  .experience-containers {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-me {
+    gap: 1rem;
+  }
+
+  .about-container {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .details-container {
+    padding: 1rem;
+  }
+
+  .experience .section-title,
+  .projects .section-title {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    padding: 0.8rem;
+    width: 100%;
+  }
+
+  .socials i {
+    font-size: 1.7rem;
+  }
+  
+  .connect .socials i {
+    font-size: 2rem;
+  }
+
+  .profile-picture img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+  .trns-img img {
+    width: 90vw;
+  }
+}

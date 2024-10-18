@@ -1,0 +1,524 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+}
+#blank {
+  background-image: url(assests/bg1.png);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.trns-img img {
+  max-width: 100%;
+  max-height: 70vh;
+}
+
+.header {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.3rem;
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  z-index: 1000;
+  background: linear-gradient(#e39fc2, #8c6d99);
+}
+.nav-links {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 400;
+  position: relative;
+}
+.logo {
+  color: white;
+  font-size: 1.15rem;
+  text-wrap: nowrap;
+  font-weight: 550;
+  transition: 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+li a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  height: 5px;
+  top: 25px;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(#8a6cb1, #68468d);
+}
+li a:hover::before {
+  width: 100%;
+  border-radius: 10rem;
+}
+.github-btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 3rem;
+  border: none;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  text-wrap: nowrap;
+  transition: 0.3s ease-in-out;
+  font-size: 1rem;
+  background: linear-gradient(#9a7cc2, #78549f);
+}
+.github-btn:hover {
+  transform: scale(1.1);
+}
+#menu {
+  font-size: 2rem;
+  display: none;
+}
+/* Section */
+section {
+  min-height: 100vh;
+  padding: 6rem 12%;
+  width: 100%;
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* About */
+#about {
+  background-image: url(assests/bg2.png);
+  position: relative;
+}
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.info-box h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+  color: #e39fc2;
+}
+.info-box h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #817091;
+}
+.info-box span {
+  background-color: #e39fc2;
+  background-clip: text;
+  font-size: 2rem;
+  color: transparent;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+}
+.socials i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  color: #817091;
+  margin-bottom: 2rem;
+}
+.socials i:hover {
+  color: #684d87;
+}
+.about {
+  text-align: center;
+}
+.profile-picture img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  margin: 1.5rem;
+}
+
+.about .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #684d87;
+}
+
+.about h2 {
+  font-size: 1.5rem;
+  background-color: #b874a2;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.interests {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+.interests i {
+  font-size: 2.5rem;
+  color: #684d87;
+}
+.download-resume {
+  background: linear-gradient(#e39fc2, #b874a2);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 25px;
+}
+
+.download-resume:hover {
+  transform: scale(1.1);
+}
+/* Experience */
+#experience {
+  position: relative;
+  background-image: url(assests/bg3.png);
+}
+.experience {
+  justify-items: center;
+}
+.experience .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #684d87;
+}
+.experience-sub-title {
+  color: #b874a2;
+  font-weight: 600;
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  width: 12rem;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+  justify-content: left;
+  text-align: left;
+}
+
+article i {
+  cursor: default;
+  color: #604f6f;
+}
+.experience-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1.7rem;
+}
+
+.experience-containers,
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+.details-container {
+  padding: 2.5rem;
+  flex: 1;
+  background: transparent;
+  border-radius: 2rem;
+  border: 0.1rem solid;
+  border-color: white;
+  text-align: center;
+}
+.experience .section-title {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.experience h3 {
+  color: #446594;
+}
+.experience p {
+  color: #684d87;
+}
+
+/* Projects */
+
+#projects {
+  position: relative;
+  background-image: url(assests/bg2.png);
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: transparent;
+}
+.projects h2 {
+  font-size: 1.3rem;
+}
+.project-img {
+  border-radius: 2rem;
+  width: 80%;
+  height: 80%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: #b874a2;
+}
+
+.project-btn {
+  color: #817091;
+  border-color: #817091;
+  font-size: 0.9rem;
+}
+.projects .details-container {
+  padding: 3rem;
+  flex: 1;
+  background: transparent;
+  border-radius: 2rem;
+  border: 0.1rem solid;
+  border-color: #e39fc2;
+  text-align: center;
+}
+.projects .section-title {
+  font-size: 2.5rem;
+  color: #817091;
+  text-align: center;
+}
+.projects .experience-containers {
+  gap: 2rem;
+  margin-bottom: 0;
+  margin-top: 1.3rem;
+}
+
+.projects .experience-containers,
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Buttons */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: #817091 solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: #817091;
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* Connect */
+#connect {
+  background-image: url(assests/bg4.png);
+  position: relative;
+}
+
+.connect .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+#connect {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+.socials{
+  justify-content: center;
+}
+.connect .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #F5F5F5;
+}
+.connect .socials {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+}
+.connect .socials i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  color: #c1aedf;
+  margin-bottom: 2rem;
+}
+.connect .socials i:hover {
+  color: #FEBFDD;
+}
+
+/* Footer */
+footer {
+  background-color: #F5F5F5;
+  color: #604F6F;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+footer p:hover {
+  color: #F5F5F5;
+}
