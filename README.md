@@ -1,7 +1,9 @@
 # Portfolio Website
+Welcome to my portfolio!
+
 ![Screenshot_2024-10-19_015355-removebg-preview](https://github.com/user-attachments/assets/5ba86170-1945-400b-99d0-6320b8304bc1)
 
-Welcome to my portfolio! This is a fully responsive portfolio website built using **HTML, CSS, and JavaScript**. The site features the following sections:
+This is a fully responsive portfolio website built using **HTML, CSS, and JavaScript**. The site features the following sections:
 
 - ## Home
 ![Screenshot 2024-10-19 004034](https://github.com/user-attachments/assets/709f234b-3ea5-40d0-ae5a-7f326c570897)
